@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Test_Layout</title>
+</head>
+<body>
+    <main>
+        <ul class="excursions-list">
+            <li class="excursions-list__item">
+                <div class="excursion-picture">
+                    <p class="excursion-picture__overlay__yellow"></p>
+                </div>
+                <div class="excursion-description">
+                    <div class="excursion-description__heading">
+                        <p class="excursion-duration">2 часа</p>
+                        <h3 class="excursion-heading"><span>АКЦИЯ&nbsp;&mdash;</span> Обзорная экскурсия по&nbsp;рекам и&nbsp;каналам с&nbsp;остановками Hop on&nbsp;Hop Off 2019</h3>
+                    </div>
+                    <ul class="excursion-advantages">
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Билет на&nbsp;целый день
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Неограниченное число катаний
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            6&nbsp;остановок у&nbsp;главных достопримечательностей
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Ближайший рейс сегодня
+                            <ul class="excursion-times">
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="excursion-info">
+                        <div class="excursion-price">
+                            <div class="excursion-price__online">
+                                900
+                                <svg width="16" height="20" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7149 0H4.33178C3.57044 0 2.9532 0.644339 2.9532 1.43911V12.3316H1.37858C0.617238 12.3316 0 12.9759 0 13.7707C0 14.5655 0.617238 15.2098 1.37858 15.2098H2.9532V18.4974H1.37858C0.617238 18.4974 0 19.1418 0 19.9365C0 20.7313 0.617238 21.3756 1.37858 21.3756H2.9532V24.5609C2.9532 25.3557 3.57044 26 4.33178 26C5.09313 26 5.71037 25.3557 5.71037 24.5609V21.3756H11.7149C12.4763 21.3756 13.0935 20.7313 13.0935 19.9365C13.0935 19.1418 12.4763 18.4974 11.7149 18.4974H5.71037V15.2098H11.7149C15.7319 15.2098 19 11.7982 19 7.60486C18.9999 3.30785 15.6469 0 11.7149 0ZM11.7149 12.3316H5.71037V2.87823H11.7149C14.1966 2.87823 16.2428 4.96782 16.2428 7.60495C16.2427 10.2113 14.2116 12.3316 11.7149 12.3316Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <p class="excursion-price__ondock">1200&nbsp;р на&nbsp;причале</p>
+                        </div>
+                        <button class="excursion-info__btn">Подробнее</button>
+                    </div>
+                </div>
+            </li>
+            <li class="excursions-list__item">
+                <div class="excursion-picture">
+                    <p class="excursion-picture__overlay__purple"></p>
+                </div>
+                <div class="excursion-description">
+                    <div class="excursion-description__heading">
+                        <p class="excursion-duration">2 часа</p>
+                        <h3 class="excursion-heading"><span>АКЦИЯ&nbsp;&mdash;</span> Обзорная экскурсия по&nbsp;рекам и&nbsp;каналам с&nbsp;остановками Hop on&nbsp;Hop Off 2019</h3>
+                    </div>
+                    <ul class="excursion-advantages">
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Билет на&nbsp;целый день
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Неограниченное число катаний
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            6&nbsp;остановок у&nbsp;главных достопримечательностей
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Ближайший рейс сегодня
+                            <ul class="excursion-times">
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="excursion-info">
+                        <div class="excursion-price">
+                            <div class="excursion-price__online">
+                                2900
+                                <svg width="16" height="20" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7149 0H4.33178C3.57044 0 2.9532 0.644339 2.9532 1.43911V12.3316H1.37858C0.617238 12.3316 0 12.9759 0 13.7707C0 14.5655 0.617238 15.2098 1.37858 15.2098H2.9532V18.4974H1.37858C0.617238 18.4974 0 19.1418 0 19.9365C0 20.7313 0.617238 21.3756 1.37858 21.3756H2.9532V24.5609C2.9532 25.3557 3.57044 26 4.33178 26C5.09313 26 5.71037 25.3557 5.71037 24.5609V21.3756H11.7149C12.4763 21.3756 13.0935 20.7313 13.0935 19.9365C13.0935 19.1418 12.4763 18.4974 11.7149 18.4974H5.71037V15.2098H11.7149C15.7319 15.2098 19 11.7982 19 7.60486C18.9999 3.30785 15.6469 0 11.7149 0ZM11.7149 12.3316H5.71037V2.87823H11.7149C14.1966 2.87823 16.2428 4.96782 16.2428 7.60495C16.2427 10.2113 14.2116 12.3316 11.7149 12.3316Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <p class="excursion-price__ondock">1200&nbsp;р на&nbsp;причале</p>
+                        </div>
+                        <button class="excursion-info__btn">Подробнее</button>
+                    </div>
+                </div>
+            </li>
+            <li class="excursions-list__item">
+                <div class="excursion-picture">
+                    <p class="excursion-picture__overlay__invisible"></p>
+                </div>
+                <div class="excursion-description">
+                    <div class="excursion-description__heading">
+                        <p class="excursion-duration">2 часа</p>
+                        <h3 class="excursion-heading"><span>АКЦИЯ&nbsp;&mdash;</span>Обзорная экскурсия по&nbsp;рекам и&nbsp;каналам с&nbsp;остановками Hop on&nbsp;Hop Off 2019</h3>
+                    </div>
+                    <ul class="excursion-advantages">
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Билет на&nbsp;целый день
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Неограниченное число катаний
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            6&nbsp;остановок у&nbsp;главных достопримечательностей
+                        </li>
+                        <li class="excursion-advantage">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24255 11.4204C6.51714 12.1458 5.3401 12.1458 4.61504 11.4204L0.544058 7.34931C-0.181353 6.62423 -0.181353 5.44716 0.544058 4.72209C1.26912 3.99666 2.44616 3.99666 3.17157 4.72209L5.59708 7.1473C5.78018 7.33005 6.07742 7.33005 6.26087 7.1473L12.8284 0.579592C13.5535 -0.145834 14.7305 -0.145834 15.4559 0.579592C15.8043 0.927951 16 1.4006 16 1.8932C16 2.38581 15.8043 2.85845 15.4559 3.20681L7.24255 11.4204Z" fill="#FECF01"/>
+                            </svg>
+                            Ближайший рейс сегодня
+                            <ul class="excursion-times">
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                                <li class="excursion-time">
+                                    <button class="excursion-time__btn">12:00</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="excursion-info">
+                        <div class="excursion-price">
+                            <div class="excursion-price__online">
+                                900
+                                <svg width="16" height="20" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7149 0H4.33178C3.57044 0 2.9532 0.644339 2.9532 1.43911V12.3316H1.37858C0.617238 12.3316 0 12.9759 0 13.7707C0 14.5655 0.617238 15.2098 1.37858 15.2098H2.9532V18.4974H1.37858C0.617238 18.4974 0 19.1418 0 19.9365C0 20.7313 0.617238 21.3756 1.37858 21.3756H2.9532V24.5609C2.9532 25.3557 3.57044 26 4.33178 26C5.09313 26 5.71037 25.3557 5.71037 24.5609V21.3756H11.7149C12.4763 21.3756 13.0935 20.7313 13.0935 19.9365C13.0935 19.1418 12.4763 18.4974 11.7149 18.4974H5.71037V15.2098H11.7149C15.7319 15.2098 19 11.7982 19 7.60486C18.9999 3.30785 15.6469 0 11.7149 0ZM11.7149 12.3316H5.71037V2.87823H11.7149C14.1966 2.87823 16.2428 4.96782 16.2428 7.60495C16.2427 10.2113 14.2116 12.3316 11.7149 12.3316Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <p class="excursion-price__ondock">1200&nbsp;р на&nbsp;причале</p>
+                        </div>
+                        <button class="excursion-info__btn">Подробнее</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

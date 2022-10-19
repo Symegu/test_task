@@ -1,0 +1,315 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.excursions-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 26px;
+
+    &__item {
+        border: 0.3px solid $lightgrey;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        width: 100%;
+
+    }
+}
+
+.excursion {
+
+    &-picture {
+        min-height: 220px;
+        background-image: url(../img/spb.jfif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        position: relative;
+
+        &__overlay__yellow {
+            content: "новинка";
+            text-transform: uppercase;
+            @include font(600, 12px, 20px, $grey);
+            padding: 13px 35px;
+            position: absolute;
+            left: 0;
+            top: 40px;
+            background-color: $yellow;
+
+            &::before {
+                content: "новинка";
+            }
+        }
+
+        &__overlay__purple {
+            text-transform: uppercase;
+            @include font(600, 14px, 20px, #FFFFFF);
+            padding: 13px 35px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: $purple;
+            border-top-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+
+            &::before {
+                content: "новинка";
+            }
+        }
+    }
+
+    &-description {
+        padding: 16px 12px;
+
+        &__heading {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 23px;
+        }
+    }
+
+    &-duration {
+        @include font(400, 12px, 20px, $lightgrey);
+        margin-bottom: 16px;
+        display: flex;
+
+        &::before {
+            content: url("../img/clock.svg");
+            margin-right: 9px;
+        }
+    }
+
+    &-heading {
+        @include font(600, 14px, 22px, #404040);
+    }
+
+    &-advantages {
+        list-style-type: none;
+        margin-bottom: 35px;
+    }
+
+    &-advantage {
+        @include font(400, 14px, 22px, $grey);
+        margin-bottom: 11px;
+
+        & svg {
+            margin-right: 20px;
+        }
+    }
+
+    &-times {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 320px;
+        list-style-type: none;
+        margin-left: 36px;
+        margin-top: 7px;
+    }
+
+    &-time {
+        margin-right: 6px;
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+
+        &__btn {
+            @include btn__blue;            
+        }
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__btn {
+            @include btn__yellow;
+        }
+    }
+
+    &-price {
+        &__online {
+            @include font(400, 30px, 20px, $black);
+        }
+
+        &__ondock {
+            @include font(400, 10px, 20px, $black);
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.btns__margin {
+    margin-top: 6px;
+}
+
+
+@media (max-width: 375px) {
+    main {
+        max-width: 341px;
+    }
+}
+
+@media (min-width: 1240px) {
+    main {
+        max-width: 1106px;
+    }
+
+    .excursions-list {
+        align-items: flex-start;
+    
+        &__item {
+            margin-bottom: 60px;
+            width: max-content;
+            display: flex;
+
+            &:first-of-type .excursion-picture {
+                background-image:url(../img/bridge.jfif) ;
+            }
+
+            &:nth-of-type(2n) .excursion-picture {
+                background-image:url(../img/spas.jfif) ;
+            }
+
+            &:nth-of-type(3n) .excursion-picture {
+                background-image:url(../img/music.jfif) ;
+            }
+        }
+    }
+
+    .excursion {
+
+        &-picture {
+            min-height: 369px;
+            min-width: 470px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 16px;
+    
+            &__overlay__yellow {
+                @include font(600, 12px, 20px, #FFFFFF);
+                left: 0;
+                top: 40px;
+                background-color: $blue;
+    
+                &::before {
+                    content: "новинка";
+                }
+            }
+    
+            &__overlay__purple {
+                text-transform: uppercase;
+                @include font(600, 14px, 20px, $grey);
+                padding: 13px 35px;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                background-color: $yellow;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+    
+                &::before {
+                    content: "круглый год";
+                }
+            }
+
+            &__overlay__invisible {
+                visibility: hidden;
+            }
+        }
+    
+        &-description {
+            padding: 16px 23px;
+    
+            &__heading {
+                flex-direction: column-reverse;
+                margin-bottom: 9px;
+            }
+        }
+    
+        &-duration {
+            @include font(400, 14px, 20px, $lightgrey);
+            margin-top: 11px;
+            margin-bottom: 0;
+            display: flex;
+    
+            &::before {
+                content: url("../img/clock.svg");
+                margin-right: 9px;
+            }
+        }
+    
+        &-heading {
+            @include font(400, 26px, 34px, #404040);
+            max-width: 557px;
+            & span {
+                display: none;
+            }
+        }
+    
+        &-advantages {
+            margin-bottom: 28px;
+        }
+    
+        &-advantage {
+            @include font(400, 18px, 20px, $grey);
+    
+            & svg {
+                margin-right: 14px;
+            }
+
+            &:last-of-type {
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+    
+        &-times {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            margin-left: 10px;
+            margin-top: 0;
+        }
+    
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+    
+            &__btn {
+                @include btn__yellow;
+                margin-left: 11px;
+            }
+        }
+    
+        &-price {
+            &__online {
+                @include font(400, 30px, 20px, $black);
+            }
+    
+            &__ondock {
+                @include font(400, 10px, 20px, $black);
+            }
+        }
+    }
+}
